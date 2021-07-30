@@ -3,8 +3,8 @@
   left: 0px;
   top: 0px;
   height: 80px;
-  background-color: #5185A6;
-  padding: 0px 120px 0px 120px;
+  background-color: #497896;
+  padding: 0px 38px 0px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,19 +12,29 @@
 .brand-name {
   color: #fff;
   font-size: 36px;
-  line-height: 45.25px;
+  line-height: 45px;
   font-weight: 700;
   display: inline-block;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .nav-links-container {
-  width: 500px;
-  height: 40px;
-  padding-left: 15px;
+  width: 274px;
+  height: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-link {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   color: #fff;
+}
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 10px;
+  width: 12px; 
+  height: 6px; 
 }

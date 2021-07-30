@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+.testimonials-section {
+  height: 470px;
+  background-color: #497896;
+  padding: 31px 224px 81px 224px;
+}
+#testimonials-title {
+  color: #fff;
+  margin-bottom: 65px;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial-card {
+  width: 276px;
+  height: 248px;
+  background-color: #fff;
+}
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: lavender;
+  position: relative;
+  top: -38px;
+  margin: auto;
+}
+.stripe {
+  width: 8px;
+  height: 248px;
+  background-color: #D0E2F2;
+  position: relative;
+  top: -80px;
+}
+.card-content {
+  width: 217px;
+  height: 151px;
+  position: relative;
+  top: -270px;
+  left: 26px;
+}
+.quote {
+  width: 16px;
+  height: 10px;
+}
+.testimony {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 0 28px 10px;
+}
+.reviewer {
+  text-align: center;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 16px;
+  color: #5185A6;
+}
