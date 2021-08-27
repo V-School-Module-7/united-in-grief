@@ -11,7 +11,7 @@ function Testimonials(props) {
             <div className="profile-pic"></div>
             <div className="stripe"></div>
             <div className="card-content">
-              <img className="quote" src={Quotes} />
+              <img className="quote" src={Quotes} alt="" />
               <p className="testimony">Lorem ipsum dolor sit a met, consectetur adipiscing elit. Habitasse ullamcorper fames amet etiam pharetra.</p>
               <p className="reviewer">JOHN PAUL</p>
             </div>
@@ -20,7 +20,7 @@ function Testimonials(props) {
             <div className="profile-pic"></div>
             <div className="stripe"></div>
             <div className="card-content">
-              <img className="quote" src={Quotes} />
+              <img className="quote" src={Quotes} alt="" />
               <p className="testimony">Lorem ipsum dolor sit a met, consectetur adipiscing elit. Habitasse ullamcorper fames amet etiam pharetra.</p>
               <p className="reviewer">JOHN PAUL</p>
             </div>
@@ -29,7 +29,7 @@ function Testimonials(props) {
             <div className="profile-pic"></div>
             <div className="stripe"></div>
             <div className="card-content">
-              <img className="quote" src={Quotes} />
+              <img className="quote" src={Quotes} alt="" />
               <p className="testimony">Lorem ipsum dolor sit a met, consectetur adipiscing elit. Habitasse ullamcorper fames amet etiam pharetra.</p>
               <p className="reviewer">JOHN PAUL</p>
             </div>

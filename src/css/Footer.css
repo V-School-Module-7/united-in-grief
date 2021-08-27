@@ -1,19 +1,19 @@
 footer {
-  height: 313px;
   background-color: #3D647C;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer-main-content {
+  width: 90%;
   display: flex;
-  min-width: 880px;
-  width: 60%;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .mission {
-  width: 378px;
+  min-width: 378px;
   padding-top: 48px;
+  text-align: center;
 }
 .mission > h6 {
   font-family: Source Sans Pro;
@@ -30,8 +30,9 @@ footer {
   color: #fff;
 }
 .footer-nav {
-  width: 360px;
-  padding-top: 56px;
+  min-width: 347px;
+  width: 85%;
+  padding-top: 46px;
   display: flex;
   justify-content: space-between;
 }
@@ -42,35 +43,37 @@ footer {
   line-height: 20px;
   color: #fff;
 }
+.icon-group-mobile {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
 .footer-bottom {
-  min-width: 1200px;
-  width: 86%;
+  width: 90%;
 }
 .footer-divider {
   width: 100%;
   height: 6px;
   background-color: #fff;
   border-radius: 2px;
-  margin-top: 90px;
 }
 .bottom-links-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 8px;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .policy-group {
   min-width: 371px;
-  width: 26%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
-  padding-left: 10px;
+  align-self: center;
 }
 .icon-group {
-  width: 111px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
 .bottom-link {
   font-family: Source Sans Pro;
@@ -89,4 +92,111 @@ footer {
 .instagram {
   width: 20px;
   height: 20px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 550px) {
+  footer {
+    height: 313px;
+    background-color: #3D647C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-main-content {
+    display: flex;
+    flex-direction: row;
+    min-width: 880px;
+    padding-left: 120px;
+    padding-right: 200px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mission {
+    width: 378px;
+    padding-top: 48px;
+    text-align: left;
+  }
+  .mission > h6 {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    padding-bottom: 16px;
+  }
+  .mission > p {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  .footer-nav {
+    width: 360px;
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-link {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  .icon-group-mobile {
+    display: none;
+  }
+  .footer-bottom {
+    min-width: 1200px;
+    width: 86%;
+  }
+  .footer-divider {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 90px;
+  }
+  .bottom-links-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+  .policy-group {
+    min-width: 371px;
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding-left: 10px;
+  }
+  .icon-group {
+    width: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bottom-link {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
+  .facebook {
+    width: 11px;
+    height: 20px;
+  }
+  .twitter {
+    width: 22px;
+    height: 17.94px;
+  }
+  .instagram {
+    width: 20px;
+    height: 20px;
+  }
 }
