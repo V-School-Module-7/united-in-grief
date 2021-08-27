@@ -1,3 +1,4 @@
+import React, {useState} from "react"
 import Navbar from './components/Navbar'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
@@ -8,6 +9,7 @@ import CommunityIcon from "./images/community-icon.png"
 import './css/App.css';
 
 function App() {
+  const [open, setOpen] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <div className="newsletter-area">
         <h4>Grief is hard. We can help</h4>
         <button className="join-newsletter-btn">Join Newsletter</button>
@@ -49,7 +51,7 @@ function App() {
           <button className="section-btn" id="learn-more-btn">Learn More</button>
         </div>
       </div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div className="newsletter-section">
         <h3 className="section-title" id="newsletter-signup">Newsletter Sign Up</h3>
         <p>Sign up for the newseletter for a weekly dose of inspiration and ways to connect with our community</p>

@@ -19,6 +19,11 @@ function Footer(props) {
           <span className="footer-link">Contact</span>
         </div>
       </div>
+      <div className="icon-group-mobile">
+        <img  src={Facebook} className="facebook" alt="facebook icon link" />
+        <img src={Twitter} className="twitter" alt="twitter icon link" />
+        <img src={Instagram} className="instagram" alt="instagram icon link" />
+      </div>
       <div className="footer-bottom">
         <div className="footer-divider"></div>
         <div className="bottom-links-container">
@@ -28,9 +33,9 @@ function Footer(props) {
             <span className="bottom-link">Privacy Policy</span>
           </div>
           <div className="icon-group">
-            <img  src={Facebook} className="facebook" />
-            <img src={Twitter} className="twitter" />
-            <img src={Instagram} className="instagram" />
+            <img  src={Facebook} className="facebook" alt="facebook icon link" />
+            <img src={Twitter} className="twitter" alt="twitter icon link" />
+            <img src={Instagram} className="instagram" alt="instagram icon link" />
           </div>
         </div>
       </div>
