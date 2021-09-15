@@ -1,18 +1,31 @@
-import React, {useState} from "react"
-import Navbar from './components/Navbar'
-import Testimonials from './components/Testimonials'
-import Footer from './components/Footer'
-import Phone from "./images/phone.png"
-import CompanionIcon from "./images/companion-icon.png"
-import PurposeIcon from "./images/purpose-icon.png"
-import CommunityIcon from "./images/community-icon.png"
+import React, {useState} from "react";
+import Navbar from './components/Navbar';
+// import NewsletterForm from "./components/NewsletterForm";
+import MailchimpForm from "./components/MailchimpForm";
+import Footer from './components/Footer';
+import Phone from "./images/phone.png";
+import CompanionIcon from "./images/companion-icon.png";
+import PurposeIcon from "./images/purpose-icon.png";
+import CommunityIcon from "./images/community-icon.png";
 import './css/App.css';
 
 function App() {
+  const initInputs = {name: "", email: ""}
   const [open, setOpen] = useState(false)
+  const [inputs, setInputs] = useState(initInputs)
+
+  const handleChange = (e) => {
+    const {name, value} = e.target
+    setInputs(prevInputs => ({
+      ...prevInputs,
+      [name]: value
+    }))
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log(`${inputs.name} email is ${inputs.email}`)
+    setInputs(initInputs)
   }
 
   return (
@@ -55,22 +68,9 @@ function App() {
       <div className="newsletter-section">
         <h3 className="section-title" id="newsletter-signup">Newsletter Sign Up</h3>
         <p>Sign up for the newseletter for a weekly dose of inspiration and ways to connect with our community</p>
-        <form onSubmit={handleSubmit}>
-          <input 
-            className="name-input"
-            type="text"
-            placeholder="Your Name"
-            name="name">
-          </input>
-          <div className="inputs-divider"></div>
-          <input 
-            className="email-input"
-            placeholder="Your Email..."
-            type="text"
-            name="email">
-          </input>
-          <button className="subscribe-btn">Subscribe</button>
-        </form>
+        {/* <NewsletterForm /> */}
+        <MailchimpForm />
+        
       </div>
       <Footer />
     </div>

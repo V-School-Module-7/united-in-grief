@@ -29,8 +29,8 @@ function Footer(props) {
         <div className="bottom-links-container">
           <div className="policy-group">
             <span className="bottom-link">United in Grief</span>
-            <span className="bottom-link">Terms of use</span>
-            <span className="bottom-link">Privacy Policy</span>
+            <span className="bottom-link" id="terms-privacy-links">Terms of use</span>
+            <span className="bottom-link" id="terms-privacy-links">Privacy Policy</span>
           </div>
           <div className="icon-group">
             <img  src={Facebook} className="facebook" alt="facebook icon link" />

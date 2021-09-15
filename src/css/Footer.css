@@ -43,6 +43,9 @@ footer {
   line-height: 20px;
   color: #fff;
 }
+.footer-link:hover {
+  cursor: pointer;
+}
 .icon-group-mobile {
   width: 27%;
   display: flex;
@@ -80,6 +83,9 @@ footer {
   font-size: 14px;
   line-height: 18px;
   color: #fff;
+}
+#terms-privacy-links:hover {
+  cursor:pointer;
 }
 .facebook {
   width: 11px;

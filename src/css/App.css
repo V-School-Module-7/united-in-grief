@@ -36,8 +36,11 @@
   cursor: pointer;
 }
 .banner-placeholder {
-  height: 537px;
-  background-color: #fff;
+  height: 540px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .section-title {
   font-family: Source Sans Pro;
@@ -98,6 +101,9 @@ text-align: center;
   border: none;
   margin-left: auto;
   margin-right: auto;
+}
+.section-btn:hover {
+  cursor: pointer;
 }
 .newsletter-section {
   height: 483px;
@@ -166,57 +172,62 @@ input:focus {
 }
 
 @media only screen and (min-width: 550px) {
-    .newsletter-area {
-      justify-content: flex-end;
-      padding-right: 155px;
-    }
-    .newsletter-area > h4 {
-      font-size: 24px;
-      padding-right: 65px;
-      padding-top: 0;
-    }
-    .banner-placeholder {
-      height: 771px;
-    }
-    #how-we-unite {
-      color: #5185A6;
-      margin-bottom: 50px;
-    }
-    .unite-section {
-      height: 591.5px;
-      padding: 60px 120px 0 120px;
-    }
-    .services {
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 47px;
-    }
-    .service {
-    width: 229px;
-    text-align: center;
-    }
-    .info-image {
-      height: 60px;
-      width: 60px;
-    }
-    #purpose-img {
-      width: 85px;
-      height: 57px;
-    }
-    .service-title {
-      font-family: Source Sans Pro;
-      font-size: 24px;
-      margin: 16px 0;
-    }
-    .service-description {
-      font-family: Source Sans Pro;
-      font-size: 20px;
-      line-height: 25px;
-      text-align: left;
-    }
+  .newsletter-area {
+    justify-content: flex-end;
+    padding-right: 155px;
+  }
+  .newsletter-area > h4 {
+    font-size: 24px;
+    padding-right: 65px;
+    padding-top: 0;
+  }
+  .banner-placeholder {
+    min-height: 770px;
+    height: 50vh;
+    max-height: 1500px;
+  }
+  #how-we-unite {
+    color: #5185A6;
+    margin-bottom: 50px;
+  }
+  .unite-section {
+    height: 591.5px;
+    padding: 60px 120px 0 120px;
+  }
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 47px;
+  }
+  .service {
+  width: 229px;
+  text-align: center;
+  }
+  .info-image {
+    height: 60px;
+    width: 60px;
+  }
+  #purpose-img {
+    width: 85px;
+    height: 57px;
+  }
+  .service-title {
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    margin: 16px 0;
+  }
+  .service-description {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
   .newsletter-section {
     height: 396px;
     padding: 56px 0 103px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #newsletter-signup {
     color: #535A61;
