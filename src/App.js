@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Navbar from './components/Navbar';
-// import NewsletterForm from "./components/NewsletterForm";
 import MailchimpForm from "./components/MailchimpForm";
 import Footer from './components/Footer';
 import Phone from "./images/phone.png";
@@ -10,31 +9,21 @@ import CommunityIcon from "./images/community-icon.png";
 import './css/App.css';
 
 function App() {
-  const initInputs = {name: "", email: ""}
-  const [open, setOpen] = useState(false)
-  const [inputs, setInputs] = useState(initInputs)
-
-  const handleChange = (e) => {
-    const {name, value} = e.target
-    setInputs(prevInputs => ({
-      ...prevInputs,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(`${inputs.name} email is ${inputs.email}`)
-    setInputs(initInputs)
-  }
+  const [formPopup, setformPopup] = useState(false);
 
   return (
     <div className="App">
       <Navbar/>
       <div className="newsletter-area">
         <h4>Grief is hard. We can help</h4>
-        <button className="join-newsletter-btn">Join Newsletter</button>
+        <button className="join-newsletter-btn" onClick={() => setformPopup(true)}>Join Newsletter</button>
       </div>
+      {formPopup && 
+        <div className="newsletter-popup">
+          <button className="cancel-btn" onClick={() => setformPopup(false)}>x</button>
+          <h3 className="popup-title">Subscribe to our newsletter</h3>
+          <MailchimpForm formId="popup" />
+        </div>}
       <div className="banner-placeholder"></div>
       <div className="unite-section">
         <h3 className="section-title" id="how-we-unite">How We Unite</h3>
@@ -68,9 +57,7 @@ function App() {
       <div className="newsletter-section">
         <h3 className="section-title" id="newsletter-signup">Newsletter Sign Up</h3>
         <p>Sign up for the newseletter for a weekly dose of inspiration and ways to connect with our community</p>
-        {/* <NewsletterForm /> */}
-        <MailchimpForm />
-        
+        <MailchimpForm formId="page-form" />
       </div>
       <Footer />
     </div>

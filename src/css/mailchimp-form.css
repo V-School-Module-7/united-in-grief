@@ -1,4 +1,34 @@
-button {
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+/* #page-form {background-color: orange;} */
+#popup input {
+  border: 1px solid #535A61;
+  border-radius: 5px;
+}
+input {
+  border: none;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 7px 0 16px;
+  width: 382px;
+  height: 75px;
+  border-radius: 3px;
+  color: #535A61;
+}
+input:focus {
+  outline: none;
+}
+.subscribe-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 10px 16px;
   background: #5185A6;
   border-radius: 8px;
@@ -9,9 +39,32 @@ button {
   line-height: 25px;
   color: #fff;
 }
-.form-container {
-  background-color: #fff;
-  width: 500px;
-  display: flex;
-  border-radius: 3px;
+
+
+@media only screen and (min-width: 550px) {
+  #page-form > .form {
+    width: 584px;
+    height: 75px;
+    border-radius: 3px;
+    background-color: #fff ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    gap: 0;
+  }
+  .name-input{
+    width: 172px;
+  }
+  .email-input {
+    width: 242px;
+  }
+  .inputs-divider {
+    width: 1.5px;
+    height: 48px;
+    background-color: #535A61;
+  }
+  .subscribe-btn {
+    margin-right: 25px;
+  }
 }
