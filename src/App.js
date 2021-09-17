@@ -34,22 +34,22 @@ function App() {
         <h3 className="section-title" id="how-we-unite">How We Unite</h3>
         <div className="services">
           <div className="service">
-            <img src={Phone} alt="" className="info-image" />
+            <div className="img-container"><img src={Phone} alt="" className="info-image" /></div>
             <p className="service-title">Mobile Ecosystem</p>
             <p className="service-description">Our mobile application acts as a predictive engine to surface the "next best step" in your grief journey, coupled with prompts for reflection, activity, and response</p>
           </div>
           <div className="service">
-            <img src={CompanionIcon} alt="" className="info-image" />
+            <div className="img-container"><img src={CompanionIcon} alt="" className="info-image" /></div>
             <p className="service-title">Personal Companion</p>
             <p className="service-description">Using asynchronous video check-ins, your 1-to-1 Peer Ally will check in with you regularly, leading into your introduction to your purpose group.</p>
           </div>
           <div className="service">
-            <img src={PurposeIcon} alt="" className="info-image" id="purpose-img" />
+            <div className="img-container"><img src={PurposeIcon} alt="" className="info-image" id="purpose-img" /></div>
             <p className="service-title">Purpose Group</p>
             <p className="service-description">Led by a Clinical Group Lead, you and 5 other grievers who share an area of common focus will meet by live video for 8 weeks to support each other's hopes, goals, and movement.</p>
           </div>
           <div className="service">
-            <img src={CommunityIcon} alt="" className="info-image" />
+            <div className="img-container"><img src={CommunityIcon} alt="" className="info-image" /></div>
             <p className="service-title">Community</p>
             <p className="service-description">The broader UIG community will offer opportunities to deepen and strengthen your support network through online and real-world connection points.</p>
           </div>

@@ -24,6 +24,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         ref={node => (email = node)}
         type="email"
         placeholder="Your email" 
+        className="email-input"
         />
       <button className="subscribe-btn" onClick={submit}>Subscribe</button>
     </div>

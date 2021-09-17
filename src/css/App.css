@@ -137,7 +137,6 @@ text-align: center;
 .service-description {
   font-family: Source Sans Pro;
   font-size: 20px;
-  line-height: 25px;
   text-align: left;
 }
 .btn-div {
@@ -177,16 +176,6 @@ text-align: center;
 .subscribe-btn:hover {
   cursor: pointer;
 }
-.button-background {
-  background-image: url(https://images.unsplash.com/photo-1507823782123-27db7f9fd196?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJhY29vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
-  background-size: cover;
-  background-position: center;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media only screen and (min-width: 550px) {
   .newsletter-area {
@@ -200,7 +189,7 @@ text-align: center;
   }
   .banner {
     min-height: 770px;
-    height: 50vh;
+    height: 50vw;
     max-height: 1500px;
   }
   .banner-text {
@@ -219,12 +208,12 @@ text-align: center;
     margin-bottom: 50px;
   }
   .unite-section {
-    height: 591.5px;
     padding: 60px 120px 0 120px;
   }
   .services {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 47px;
   }
   .service {
@@ -247,11 +236,9 @@ text-align: center;
   .service-description {
     font-family: Source Sans Pro;
     font-size: 20px;
-    line-height: 25px;
     text-align: left;
   }
   .newsletter-section {
-    height: 396px;
     padding: 56px 0 103px 0;
     display: flex;
     flex-direction: column;
@@ -266,5 +253,60 @@ text-align: center;
     text-align: center;
     color: #2B4F57;
     margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+
+  .banner-header {
+    font-size: 5vw;
+    padding-bottom: 2vw;
+  }
+  .slogan {
+    font-size: 2vw;
+  }  
+  .section-title {
+    font-size: 3vw;
+  }
+  .unite-section {
+    padding: 5vw 10vw 5vw 10vw;
+  }
+  .services {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+  }
+  .service { 
+    width: 20%;
+  }
+  .service-title {
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  .service-description {
+    font-size: 1vw;
+  }
+  .img-container {
+    height: 5.5vw;
+  }
+  .info-image {
+    width: 30%;
+    height: auto;
+  }
+  #purpose-img {
+   width: 45%;
+   height: auto; 
+  }
+  .section-btn {
+    font-size: 1vw;
+  }
+  .newsletter-section {
+    padding: 3vw 0 6vw 0;
+  }
+  #newsletter-signup {
+    margin-bottom: 2vw;
+  }
+  .newsletter-section > p {
+    font-size: 1vw;
   }
 }
