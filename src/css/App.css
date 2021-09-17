@@ -43,6 +43,7 @@
   right: 0;
   margin: auto;
   width: 90%;
+  max-width: 1200px;
   top: 200px;
   padding-bottom: 50px;
 }
@@ -50,13 +51,15 @@
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 30px;
   border: none;
-  margin-top: -7px;
-  margin-left: -7px;
-  background-color: #F76C5E;
-  color: #fff;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.cancel-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 .popup-title {
   margin-top: 20px;
@@ -64,12 +67,34 @@
   margin-bottom: 30px;
   font-size: 25px;
 }
-.banner-placeholder {
+.banner {
   height: 540px;
-  background-image: url(../images/banner.png);
+  /* background-image: url(../images/banner.png); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner.png), url(../images/banner.png), linear-gradient(0deg, rgba(73, 120, 150, 0.5), rgba(73, 120, 150, 0.5)), url(../images/banner.png), #C4C4C4;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Source Sans Pro;
+  margin-top: -200px;
+}
+.banner-header {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 70px;
+}
+.slogan {
+  font-size: 25px;
+  line-height: 42px;
+  font-weight: 400;
 }
 .section-title {
   font-family: Source Sans Pro;
@@ -135,7 +160,6 @@ text-align: center;
   cursor: pointer;
 }
 .newsletter-section {
-  height: 483px;
   background-color: #d0e2f2;
   padding: 56px 18px 38px 18px;
 }
@@ -174,10 +198,21 @@ text-align: center;
     padding-right: 65px;
     padding-top: 0;
   }
-  .banner-placeholder {
+  .banner {
     min-height: 770px;
     height: 50vh;
     max-height: 1500px;
+  }
+  .banner-text {
+    margin-top: -200px;
+  }
+  .banner-header {
+    font-size: 96px;
+    line-height: 121px;
+  }
+  .slogan {
+    font-size: 36px;
+    line-height: 42px;
   }
   #how-we-unite {
     color: #5185A6;

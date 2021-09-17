@@ -24,7 +24,12 @@ function App() {
           <h3 className="popup-title">Subscribe to our newsletter</h3>
           <MailchimpForm formId="popup" />
         </div>}
-      <div className="banner-placeholder"></div>
+      <div className="banner">
+        <div className="banner-text">
+          <h1 className="banner-header">United in Grief</h1>
+          <h2 className="slogan">your companion in grief</h2>
+        </div>
+      </div>
       <div className="unite-section">
         <h3 className="section-title" id="how-we-unite">How We Unite</h3>
         <div className="services">

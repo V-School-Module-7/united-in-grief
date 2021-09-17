@@ -11,27 +11,28 @@ const CustomForm = ({ status, message, onValidated }) => {
     onValidated({ EMAIL: email.value, MMERGE1: name.value});
   }
   return (
-    <div className="form"  >
-      {status === "sending" && <div>sending...</div>}
-      {status === "error" && <div>{message}</div>}
-      {status === "success" && <div>Thanks for Subscribing!</div>}
+    <>
+    <div className="form" >
       <input 
         ref={node => (name = node)}
         type="text"
         placeholder="Your name" 
         className="name-input"
-      />
+        />
       <div className="inputs-divider"></div>
       <input 
         ref={node => (email = node)}
         type="email"
         placeholder="Your email" 
-      />
+        />
       <button className="subscribe-btn" onClick={submit}>Subscribe</button>
     </div>
+      {status === "sending" && <div className="signup-message">sending...</div>}
+      {status === "error" && <div className="signup-message">{message}</div>}
+      {status === "success" && <div className="signup-message">Thanks for subscribing!</div>}
+    </>
   )
 }
-
 
 const MailchimpForm = (props) => (
   <div id={props.formId} >
