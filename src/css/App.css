@@ -45,8 +45,9 @@
   transform: translateX(-50%);
   max-width: 750px;
   top: 200px;
-  height: 47vh;
+  height: 46vh;
   min-height: 444px;
+  max-height: 460px;
 }
 .cancel-btn {
   width: 40px;

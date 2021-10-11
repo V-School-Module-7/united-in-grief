@@ -37,6 +37,7 @@ input:focus {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
+  margin-top: 20px;
   color: #fff;
 }
 .subscribe-btn:hover {
