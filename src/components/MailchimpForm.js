@@ -12,7 +12,7 @@ const CustomForm = ({ status, message, onValidated }) => {
   }
   const customErrorMsg = (message) => {
     if(message.includes('already subscribed')) {
-      return "It looks like that email is already subscribed"
+      return "It looks like that email address is already subscribed"
     }else if(message.includes("enter a value")) {
       return "Please fill in all fields"
     }else if(message.includes("An email address must contain a single @") || message.includes("domain portion of the email address is invalid")) {

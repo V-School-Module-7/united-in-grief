@@ -39,13 +39,14 @@
   background-color: white;
   border-radius: 5px;
   position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 50%;
   width: 90%;
-  max-width: 1200px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 750px;
   top: 200px;
-  padding-bottom: 50px;
+  height: 47vh;
+  min-height: 444px;
 }
 .cancel-btn {
   width: 40px;
@@ -66,10 +67,10 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 25px;
+  font-family: Source Sans Pro;
 }
 .banner {
   height: 540px;
-  /* background-image: url(../images/banner.png); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner.png), url(../images/banner.png), linear-gradient(0deg, rgba(73, 120, 150, 0.5), rgba(73, 120, 150, 0.5)), url(../images/banner.png), #C4C4C4;
   background-repeat: no-repeat;
   background-size: cover;
