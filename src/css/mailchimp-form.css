@@ -71,10 +71,11 @@ input:focus {
   #page-form .inputs-divider {
     width: 0.5px;
     height: 48px;
+    margin: 0 5px 0 5px;
     background-color: #535A61;
   }
   #page-form .subscribe-btn {
-    margin-right: 25px;
+    margin: 0 15px 0 15px;
   }
 }
 
