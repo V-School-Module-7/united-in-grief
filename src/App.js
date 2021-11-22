@@ -34,7 +34,9 @@ function App() {
         <h3 className="section-title" id="how-we-unite">How We Unite</h3>
         <div className="services">
           <div className="service">
-            <div className="img-container"><img src={Phone} alt="" className="info-image" /></div>
+            <div className="img-container">
+              <img src={Phone} alt="group of people enjoying the sunrise | united in grief" className="info-image" />
+            </div>
             <p className="service-title">Mobile Ecosystem</p>
             <p className="service-description">Our mobile application acts as a predictive engine to surface the "next best step" in your grief journey, coupled with prompts for reflection, activity, and response.</p>
           </div>
