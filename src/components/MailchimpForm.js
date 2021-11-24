@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import "../css/mailchimp-form.css"
 
@@ -7,9 +7,21 @@ const url = `https://gmail.us5.list-manage.com/subscribe/post?u=${process.env.RE
 const CustomForm = ({ status, message, onValidated }) => {
   let email, name;
   const submit = () => {
-    email && name && email.value.indexOf("@") > -1 && 
+    // email && name && email.value.indexOf("@") > -1 && 
     onValidated({ EMAIL: email.value, MMERGE1: name.value});
   }
+  const customErrorMsg = (message) => {
+    if(message.includes('already subscribed')) {
+      return "It looks like that email address is already subscribed"
+    }else if(message.includes("enter a value")) {
+      return "Please fill in all fields"
+    }else if(message.includes("An email address must contain a single @") || message.includes("domain portion of the email address is invalid")) {
+      return 'Please enter a valid email address'
+    }else {
+      return "We're sorry, something went wrong.  Please try again later."
+    }
+  }
+
   return (
     <>
     <div className="form" >
@@ -25,12 +37,13 @@ const CustomForm = ({ status, message, onValidated }) => {
         type="email"
         placeholder="Your email" 
         className="email-input"
-        />
+      />
       <button className="subscribe-btn" onClick={submit}>Subscribe</button>
     </div>
       {status === "sending" && <div className="signup-message">sending...</div>}
-      {status === "error" && <div className="signup-message">{message}</div>}
-      {status === "success" && <div className="signup-message">Thanks for subscribing!</div>}
+      {status === "error" && console.log(message)}
+      {status === "error" && <div className="signup-message">{customErrorMsg(message)}</div>}
+      {status === "success" && <div className="signup-message">Thank you for subscribing</div>}
     </>
   )
 }

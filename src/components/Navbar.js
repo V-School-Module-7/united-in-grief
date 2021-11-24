@@ -12,7 +12,7 @@ function Navbar(props) {
       shouldDisplay: false
     },
     sponsors: {
-      navLinks: ["Media Request", "Investory Info", "Get Involved"],
+      navLinks: ["Media Request", "Investor Info", "Get Involved"],
       shouldDisplay: false
     }
   })
